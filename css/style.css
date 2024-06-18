@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    font-family: "Cairo", sans-serif;
+
+}
+
+/* Navbar */
+
+.navbar:hover {
+    background-color: #1B1487 !important;
+    transition: all ease 1.1s;
+}
+
+.navbar-brand img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+}
+
+
+/* Carousel */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.carousel-inner button:hover {
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #0D6EFD;
+    transition: all ease 1.1s;
+}
+
+.carousel-indicators button {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    background-color: #0D6EFD !important;
+    margin: 10px !important;
+}
+
+.carousel-indicators button:hover {
+    transition: all ease 1.1s;
+    background-color: #c03d4d !important;
+}
+
+.carousel-caption {
+    background-color: rgba(13, 10, 253, 0.5);
+    border-radius: 20px;
+}
+
+
+/* Products */
+
+.starts :hover {
+    color: #c03d4d !important;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img:hover {
+    transform: scale(1.1) !important;
+    transition: all ease 1s;
+    cursor: pointer !important;
+}
+
+.card img {
+    height: 300px;
+    width: 100%;
+}
+
+
+/* Footer */
+Footer{
+    background-color:#1B1487;
+    padding:20px 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+Footer h2{
+    margin-bottom: 3rem;
+}
+ .fa-brands::before{
+display: none;
+}
+ .fa-brands:hover{
+background-color: #0D6EFD;
+}
+
+
+/* Offcanvas */
+
+.offcanvas-body img {
+    width: 100%;
+    height: 300 rm;
+    /* border: #0D6EFD solid 1px; */
+}
+
+.offcanvas-body img:hover {
+    transform: skew(-5deg);
+    transition: all ease 1s;
+    cursor: pointer !important;
+}
+
+/* Conact Us */
+
+.contactus {
+    /* height: 60vh; */
+    background: url(../images/Carousel3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* More Products */
+.sss {
+    width: 80px;
+    height: 100px;
+
+}
+
+.sss:hover {
+    transform: rotate(5deg) scale(1.1);
+    transition: ease all 1s;
+}
+
+/* Service policy */
+.accordion-button{
+background-color: #458ffe !important;
+color: aliceblue !important;
+display: flex;
+justify-content: center;
+}
+
+.accordion-button::after{
+   display: none;
+}
+
+.service-body{
+   border: solid 1px rgb(231, 230, 230);
+   padding: 20px;
+   background-color:#fffbfb;
+   border-radius: 10px;
+}
+
+/* Modal */
+
+.DetailProductIMG {
+    height: 100rm !important;
+    width: 100% !important;
+}
+
+/* More */
+.blue {
+    color: #0D6EFD !important;
+}
+
+.text-Line {
+    border-bottom: crimson solid 3px;
+    margin-top: 10px;
+}
+
+.btn-dark:hover {
+    background-color: #c03d4d !important;
+    border-radius: 20px !important;
+    transition: all ease 1s;
+
+}
+
+.crimson {
+    background-color: crimson !important;
+    color: azure;
+}
+.crimson1 {
+   
+    color: crimson;
+}
+
+.crimson:hover {
+    background-color: rgb(107, 38, 52) !important;
+    transition: all ease 1s;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1B1487;
+    border-radius: 10px;
+}

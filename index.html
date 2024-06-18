@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع متجر إلكتروني</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/nav1.jpg" alt="">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fw-bold" aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            صفحات
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">الأخبار</a></li>
+                            <li><a class="dropdown-item" href="#"> آخر الأخبار</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> الأصناف</a>
+                    </li>
+
+
+                </ul>
+              <span style="margin-left: -10px;" class="badge rounded-pill bg-danger">3</span>  <a class="nav-link text-white" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    <i class="fas fa-shopping-cart ms-2"></i>
+                    السلة</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar //-->
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block my-5 py-5">
+                    <h1>الجودة سمتنا</h1>
+                    <p class="my-4">كل ماتريده سيصل إلى باب منزلك بأسرع وقت ممكن.</p>
+                    <button class="btn btn-dark">سجل الآن</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Carousel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block my-5 py-5">
+                    <h1>رضاكم غايتنا</h1>
+                    <p class="my-4">ثق تماماً بأننا نعامل كل عميل على حده.</p>
+                    <button class="btn btn-dark">سجل الآن</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Carousel3.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block my-5 py-5">
+                    <h1>تسوق آمن</h1>
+                    <p class="my-4">جميع بيانات العملاء يتم التعامل معها بسرية تامة.</p>
+                    <button class="btn btn-dark">سجل الآن</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="fa-solid fa-angles-left fs-1 blue" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="fa-solid fa-angles-right fs-1 blue" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel// -->
+    <!-- Products -->
+    <section id="Products" class="text-center my-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h2 class="text-Line pb-2">المنتجات</h2>
+            </div>
+            <div id="buttons" class="my-4  filter-button-group">
+                <button class="btn btn-primary " data-filter="*">الكل</button>
+                <button class="btn btn-outline-primary" data-filter=".bestSeller">الأكثر مبيعاً</button>
+                <button class="btn btn-outline-primary" data-filter=".new">الأحدث</button>
+                <button class="btn btn-outline-primary" data-filter=".discount">الخصومات</button>
+            </div>
+
+            <div id="Product-Card " class="">
+                <div class="row grid" id="">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 bestSeller">
+                        <div class="card " style="width: 18rm;">
+                            <img src="images/Black T-shirt on transparent background.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 bestSeller">
+                        <div class="card " style="width: 18rm;">
+                            <img src="images/black_hoodie_mockup.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 new">
+                        <div class="card " style="width: 18rm;">
+                            <img src="images/blue-dress-sleeve-boy-clothing.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 discount">
+                        <div class="card" style="width: 18rm;">
+                            <img src="images/T shirt with blue color -6.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 new">
+                        <div class="card" style="width: 18rm;">
+                            <img src="images/top-long-casual-beautiful-sleeve.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 new">
+                        <div class="card" style="width: 18rm;">
+                            <img src="images/Two shirts are on a checkered surface -7.jpg" class="card-img-top"
+                                alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 discount">
+                        <div class="card" style="width: 18rm;">
+                            <img src="images/white_hoody_sweatshirt_mockup.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-4 discount">
+                        <div class="card" style="width: 18rm;">
+                            <img src="images/Black T-shirt on transparent background.jpg" class="card-img-top" alt="..."
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-body">
+                                <div>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                    <i class="fa-solid fa-star blue starts"></i>
+                                </div>
+                                <h5 class="card-title mt-3">تي شيرت </h5>
+                                <p class="card-text">تي شيرت أسود ماركة بولو</p>
+                                <p class="blue fw-bold">50$</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products// -->
+
+
+
+    <!-- Contact us -->
+
+    <section id="Contact-us" class="contactus m-5">
+        <div class="container p-5 ">
+            <div class="rwo">
+                <div class="col-md-12">
+                    <div class="Contact-content d-flex justify-content-center">
+                        <h2 class="blue text-Line">تواصل معنا</h2>
+                    </div>
+                    <p class="my-5 text-dark">ضمن التوافق التام مع أنظمة التشغيل المختلفة، سواء كانت iOS أو Android، مع
+                        تحسينات
+                        مُستمرة
+                        لتحقيق أفضل أداء. نستخدم أحدث
+                        التقنيات وأدوات التطوير لضمان تقديم تطبيقات جوال تستجيب بسرعة وبشكل موثوق نعمل على تصميم مواقع
+                        ويب
+                        مبتكرة تلفت انتباه
+                        الزوار وتعكس هوية علامتك التجارية بشكل مميز ,نهدف إلى توفير تجربة ممتعة وسهلة الاستخدام عبر
+                        واجهات
+                        مستخدم فعالة وتجربة
+                        تفاعلية ,نهتم بالتفاصيل ونسعى لتقديم مواقع ويب ذات أداء متميز ,نهتم بتصميم مواقع ويب ذات استجابة
+                        ومتوافقة مع مختلف
+                        الأجهزة والشاشات ,نستخدم أحدث التقنيات لضمان أن يكون موقعك موثوقًا وسريعًا وآمنًا</p>
+
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control" placeholder="البريد الإلكتروني" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                        <button class="border-1 border-secondary ">اشترك معنا</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact us// -->
+
+    <!-- Orders -->
+    <section id="Orders" class="m-5">
+        <div class="container border rounded-1">
+            <div class="d-flex justify-content-center my-5">
+                <h2 class="blue text-Line">طلبية خاصة</h2>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">الاسم</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-6">
+                    <label for="mobile" class="form-label">رقم الهاتف</label>
+                    <input type="text" class="form-control" id="mobile">
+                </div>
+                <div class="col-6">
+                    <label for="message-title" class="form-label">عنوان الرسالة</label>
+                    <input type="text" class="form-control" id="message-title">
+                </div>
+                <div>
+                    <label for="order detaile " class="form-label">تفاصيل الطلبية</label>
+                    <textarea name="order detaile " id="order detaile " class="form-control">
+
+                    </textarea>
+                </div>
+
+
+                </textarea>
+                <div class="col-12 text-center my-5">
+                    <button type="submit" class="btn btn-dark w-25">ارســــــــــال</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Orders// -->
+
+    <!-- More Orders -->
+    <section id="More-Orders">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h2 class="blue text-Line my-5">المنتجات الأكثر طلباً</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>الأكثر تقييماً</h5>
+                    <div class="d-flex align-items-center mt-3 text-center">
+                        <div>
+                            <img src="images/Black T-shirt on transparent background.jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/T shirt with blue color -6.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/Two shirts are on a checkered surface -7.jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/white_hoody_sweatshirt_mockup.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h5>الأكثر مبيعاً</h5>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/blue-dress-sleeve-boy-clothing.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/button-cotton-shirt-classic-background (1).jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/top-long-casual-beautiful-sleeve.jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/black_hoodie_mockup.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h5>الأكثر طلباً</h5>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/Isolated_black_t-shirt_front.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/still-life-rendering-jackets-display (1).jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/still-life-rendering-jackets-display.jpg" alt=""
+                                class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div>
+                            <img src="images/T shirt with blue color -6.jpg" alt="" class="sss img-thumbnail ms-3">
+                        </div>
+                        <div>
+                            <p>بدلة رجالي</p>
+                            <p class="blue fw-bold">50$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- More Orders// -->
+
+    <!-- Service policy -->
+    <section id="Service-policy" class="text-center my-5">
+
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h2 class="blue text-Line">سياسات الخدمة</h2>
+            </div>
+            <div id="buttons" class="my-4">
+                <button class="btn crimson" data-bs-toggle="collapse" data-bs-target="#collapseExample">سياسة
+                    الخدمة</button>
+                <button class="btn btn-dark w-25" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="me-2">السلة</span>
+                </button>
+            </div>
+
+
+            <div class="collapse" id="collapseExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <div class="service-body">
+                        <h2 style="color: crimson;margin-bottom: 30px;">سياسة ارجاع المنتجات</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    مدة الاسترجاع
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">يكن استرجاع المنتج في غضون عشرة أيام من تاريج الشراء</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    سياسة الاحتفاظ بالعلبة
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">برجاء الاحتفاظ بالعلبة الخاصة بالمنتج بالحالة التي عليها عند
+                                    الاستلام.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    سياسة تقييم المنتجات
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">إذا تمت ملاحظة أي أخطاء في المنتج يمكنك تقييم المنتج.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Service policy// -->
+
+
+
+    <!-- Our Service -->
+    <section id="Our-Service">
+
+        <div class="container">
+            <div class="d-flex justify-content-center my-5">
+                <h2 class="blue text-Line">خدماتنا</h2>
+            </div>
+            <div class="row mb-5">
+
+                <div class="col-md-5">
+                    <iframe src="https://lottie.host/embed/1e6e5d7b-5a4d-4fcf-aa2e-7261dc518d7f/1iKMdsQDOn.json"
+                        width="100%" height="300"></iframe>
+                </div>
+                <div class="col-md-7">
+                    <h5 class="crimson1">إنشاء موقع ويب</h5>
+                    <div class="d-flex align-items-center mt-5 ">
+                        <p> ها قَد وَلتِ الأيام التي كان فيها تصميم الويب مهمة شاقة. يمكنك أن تعمل كمصمم ويب وأن تنشئ
+                            موقعاً إلكترونياً مجانياً في
+                            أقل من ساعة. لا تذخر جهداً في بث الحياة الرقمية في المواقع الإلكترونية المكوَّنة من صفحة
+                            واحدة مع أفكار متنوعة لمحتوى
+                            صفحة الويب لعملك أو مؤسستك أو حدثك. يمكنك حتى إنشاء المواقع الإلكترونية لأي هدف أو غرض
+                            يتراود في مخيلتك. لا حاجة لإغداق
+                            التفكير في برامج الترميز أو التصميم!
+                        </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+            <div class="row mb-5" dir="ltr">
+
+                <div class="col-md-5">
+                    <iframe src="https://lottie.host/embed/47dcc146-afaf-41e2-ad7e-f59ee350827a/106vRti8ay.json"
+                        width="100%" height="300"></iframe>
+                </div>
+                <div class="col-md-7">
+                    <h5 class="crimson1" dir="rtl">اجعل المواقع الإلكترونية تجربة جذابة بصرياً</h5>
+                    <div class="d-flex align-items-center mt-5 ">
+                        <p dir="rtl"> احصل على تناغم مثالي للصور الجميلة من النصوص والصور والفيديوهات وأنشئ واجهة مستخدم
+                            سلسة. استفِد من العناصر والأدوات
+                            الخاصة برسومات الجرافيك الثرية من صناع محتوى الموقع الإلكتروني في Canva، والتي تكفي لإنشاء
+                            قصة جذابة بصرياً لموقعك.
+                            استخدم الأيقونات والرسومات المتجهية كعلامات للأقسام واختر صوراً ورسوماً متجهية جاهزة كسياقات
+                            مرئية للمحتوى الخاص بك.
+                            حسِّنها وفقاً لأسلوبك العام وموضوعك باستخدام أداة تعديل الصور المدمجة لدينا.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+            <div class="row mb-5">
+
+                <div class="col-md-5">
+                    <iframe src="https://lottie.host/embed/69811898-da3a-4a9c-bb52-0c0903b5f05a/fKkNpH9dNp.json"
+                        width="100%" height="300"></iframe>
+
+                </div>
+                <div class="col-md-7">
+                    <h5 class="crimson1">شاهد هذه الإجراءات مباشرةً مع صانع الموقع الإلكتروني لدينا</h5>
+                    <div class="d-flex align-items-center mt-5 ">
+                        <p> تأكَّد من أن كل شيء جاهز قبل النشر. يمكنك معاينة التغييرات في الوقت الفعلي وتحسينها بسهولة
+                            لتناسب أي جهاز. يمكنك دعوة
+                            فريقك للتعاون في نفس الوقت أثناء العمل على مسودتك وإضافة تعليقات. عندما تصل إلى تصميم نهائي،
+                            لا تحتاج إلى تكبُّد أي
+                            تكاليف لنشره وبثه مع صناع محتوى الموقع الإلكتروني من Canva.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+            <div class="row" dir="ltr">
+
+                <div class="col-md-5">
+                    <iframe src="https://lottie.host/embed/d950015b-f323-47f4-ad32-260bbe18b697/S3nQiKQpYI.json"
+                        width="100%" height="300"></iframe>
+                </div>
+                <div class="col-md-7">
+                    <h5 class="crimson1" dir="rtl">إدارة موقع إلكتروني بشكلٍ مُبسَّط من البداية إلى النهاية</h5>
+                    <div class="d-flex align-items-center mt-5 ">
+                        <p dir="rtl"> اجعل موقعك الإلكتروني حديثاً دائماً حتى بعد نشره. يُعدَّ من السهل تخصيص إعدادات
+                            الموقع الإلكتروني وتحديث الأيقونة
+                            المُفضَّلة ووصف الموقع في حالة حدوث أي تغييرات في المحتوى والغرض العام. يمكنك أيضاً حماية
+                            موقعك الإلكتروني وتأمينه ضد أي
+                            عمليات اختراق عن طريق تقييد إمكانية الوصول من خلال تطبيق حماية باستخدام كلمة مرور وإخفائه من
+                            محركات البحث.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+
+    </section>
+    <!-- Our Service// -->
+
+    <!-- Footer -->
+    <Footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>عن الفريق</h2>
+                    <p>
+                        تعتبر روح الفريق والعمل الجماعي أحد العوامل الرئيسية في نجاح أي مشروع أو منظمة. فعندما يتحلى
+                        أفراد الفريق بروح قوية
+                        ويتعاونون معًا بكفاءة، فإنهم قادرون على تحقيق نتائج مذهلة. ولتعزيز روح الفريق والعمل الجماعي،
+                        يمكن استخدام بعض العبارات
+                        الملهمة والتحفيزية. وفيما يلي تقدم قائمة بعبارات تعبر عن روح الفريق والعمل الجماعي:
+
+                    </p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 col-sm-12">
+                    <h2>تواصل معنا</h2>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        الرياض، السعودية
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        0123456789
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        Td7oN@example.com
+                    </p>
+
+
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h2>تابعنا</h2>
+                    <div class="icons">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Footer>
+    <!-- Footer// -->
+
+    <!-- Offcanvas -->
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Button with data-bs-target
+    </button> -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <div>
+                <img src="images/Black T-shirt on transparent background.jpg" class="img-thumbnail" alt=""
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h5>تشيرت أسود</h5>
+                <p class="blue fw-bold">50$</p>
+            </div>
+            <hr>
+            <div>
+                <img src="images/black_hoodie_mockup.jpg" class="img-thumbnail" alt="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                <h5>تشيرت أسود</h5>
+                <p class="blue fw-bold">50$</p>
+            </div>
+            <hr>
+            <div>
+                <img src="images/T shirt with blue color -6.jpg" class="img-thumbnail" alt="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                <h5>تشيرت أسود</h5>
+                <p class="blue fw-bold">50$</p>
+            </div>
+            <hr>
+            <div>
+                <img src="images/white_hoody_sweatshirt_mockup.jpg" class="img-thumbnail" alt="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                <h5>تشيرت أسود</h5>
+                <p class="blue fw-bold">50$</p>
+            </div>
+            <hr>
+            <div>
+                <img src="images/Two shirts are on a checkered surface -7.jpg" class="img-thumbnail" alt=""
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h5>تشيرت أسود</h5>
+                <p class="blue fw-bold">50$</p>
+            </div>
+            <hr>
+            <h5 class="text-danger">الإجمالي 250$</h5>
+            <hr>
+            <div class="text-center">
+                <button class="btn btn-dark">إكمال الشراء</button>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas// -->
+
+
+
+    <!-- Modal -->
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">تفاصيل المنتج</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/Black T-shirt on transparent background.jpg"
+                                                style="height: 300px !important;" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/T shirt with blue color -6.jpg"
+                                                style="height: 300px !important;" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/white_hoody_sweatshirt_mockup.jpg"
+                                                style="height: 300px !important;" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="fa-solid fa-angles-left fs-1 blue carousel-control-prev-icon"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="fa-solid fa-angles-right fs-1 blue carousel-control-next-icon"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4>تشيرت أسود</h4>
+                                <p>تي شيرت ماركة بولو قطن 100%</p>
+                                <p>السعر : 50 $</p>
+                                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                                    <i class="fas fa-shopping-cart ms-2"></i>
+                                    اضف الي السلة</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">أغلاق</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal// -->
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.js"></script>
+
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/script.js"></script>
+     <script>
+      var $grid = $('.grid').isotope({
+            // options
+        });
+        // filter items on button click
+        $('.filter-button-group').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+     </script> -->
+
+
+    <!-- JQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- isotope -->
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            // options
+        });
+        // filter items on button click
+        $('.filter-button-group').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+    </script>
+
+</body>
+
+</html>
